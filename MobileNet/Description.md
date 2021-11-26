@@ -1,3 +1,7 @@
-test-mobile : test of MobileNet with the Fashion MNIST dataset. It's a "fast" test that can be extended (more steps for example) to have better results. The aim was just to test my MobileNet implementation.
+mobilenet-on-radiolarians : MobileNet applied on the radiolarian data set. It trains the model with our images and shows the result with a confusion matrix.
 
-mobilenet-on-radiolarians : MobileNet applied on the radiolarian data set.
+code prediction by the trained model : Once the model have been trained, you can save its parameters. In this notebook we use these parameters to predict the classification of the image by the network, without doing a training which has been done already.
+
+test conversion mobilenet nengo dl : I tried to convert the mobilenet network into Nengo, to turn it into a spiking network. Unfortunately, it wasn't successful.
+
+The xlsx document contains the stats of mobilenet trained on the radiolarians, tested on 10 runs.
